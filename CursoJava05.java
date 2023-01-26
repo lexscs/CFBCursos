@@ -4,22 +4,22 @@ public class CursoJava05 {
     /* Tipos de Loops: for, while, do while */
     public static void main(String[] args){
 
-        Scanner scan=new Scanner(System.in);
+        try (Scanner scan = new Scanner(System.in)) {
+            //FOR
+            for(int cont=0; cont < 5; cont++){
+                System.out.println(cont + " - Contando");
+            }
+            
+
+            int max=scan.nextInt();
+            //WHILE
+            int cont=0;
+              while(cont < max){
+                  System.out.println(cont + " - Contagem");
+                  cont++;
+            }
+        }
  
-        //FOR
-        for(int cont=0; cont < 5; cont++){
-            System.out.println(cont + " - Contando");
-        }
-        
-
-        int max=scan.nextInt();
-        //WHILE
-        int cont=0;
-          while(cont < max){
-              System.out.println(cont + " - Contagem");
-              cont++;
-        }
-
         //DO WHILE
         int count=0;
         do{
